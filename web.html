@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <script type="text/javascript">
+        var gnbDep1 = 6;
+        $(function(){
+            $('#pane').jScrollPane({scrollbarWidth:15, scrollbarmargin:10});
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+</head>
+<body>
+    <div id="sliduppopup" style="display: none;"></div>
+    <form name="form1">
+        <input type="hidden" name="idx">
+        <input type="hidden" name="width">
+        <input type="hidden" name="height">
+        <input type="hidden" name="pagetype" value="KO">
+    </form>
+    <div id="wrap">
+        <div id="header" class="mainHeader">
+            <div id="header_inner" class="clfix">
+                <h1>
+                    <a href="#">
+                        <img src="image.logo.gif" alt="hoam">
+                    </a>
+                </h1>
+                <ul id="gnb">
+                    <li class="topMenu01">
+                        <a href="#">
+                            <img src="imaage/gnb01.gif" alt="관람안내">
+                        </a>
+                        <ul style="width: 98px; display: none;">
+                            <li class="snbOn">
+                                <a href="#">
+                                    <img src="image/snb0101.gif" alt="관람정보" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li class="snbOn">
+                                <a href="#">
+                                    <img src="image/snb0102.gif" alt="단체관람" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li class="snbOn">
+                                <a href="#">
+                                    <img src="/image/snb0103.gif" alt="편의시설" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li class="snbOn">
+                                <a href="#">
+                                    <img src="image/snb0104.gif" alt="Contact Us" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li class="snbOn">
+                                <a href="#">
+                                    <img src="image/snb0105.gif" alt="FAQ" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="topMenu02">
+                        <a href="#">
+                            <img src="image/gnb02.gif" alt="미술관 소개">
+                        </a>
+                        <ul style="display: none;">
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0201.gif" alt="인사말" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0202.gif" alt="호암미술관 발자취" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0203.gif" alt="관람코스 안내" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="topMenu03">
+                        <a href="#">
+                            <img src="image/gnb03.gif" alt="전시">
+                        </a>
+                        <ul style="display: none;">
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0301.gif" alt="한국 추상미술" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0302.gif" alt="목가구" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0303.gif" alt="민화" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb0304.gif" alt="불교미술" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb303.gif" alt="도자기" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="image/snb303.gif" alt="VR TOUR" style="margin-top: 0px;"> 
+                                </a> 
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="header_bann">
+                    <p class="bann on">
+                        <a href="#" title="희원페이지로 이동">
+                            <img src="image/top_bann01.gif" alt="희원 하늘과 맞닿은아름다움">
+                        </a>
+                    </p>
+                    <p class="bann">
+                        <a href="#" title="전시페이지로 이동">
+                            <img src="image/top_bann02.gif" alt="전시 한국 전통미술의 아름다움">
+                        </a>
+                    </p>
+                    <p class="bann_btn">
+                        <a id="rarrow" href="#">
+                            <img src="image/btn_header_bannL.gif" alt="이전">
+                        </a>
+                        <a id="larrow" href="#">
+                            <img src="image/btn_header_bannR.gif" alt="다음">
+                        </a>
+                    </p>
+                </div>
+                ::after       
+            </div>
+        </div>
+        <div id="container" class="clfix pt0">
+            <div id="mainContent" style="overflow:hidden";>
+                <div id="mainImgWrap" class="clfix">
+                    <div class="play">
+                        <a class="mainImgBtn" href="#">
+                            <img src="image/btn_play.png" alt="자동 실행">
+                        </a>
+                    </div>
+                    <div class="stop">
+                        <a class="mainImgBtn" href="#">
+                            <img src="image/btn_stop.png" alt="자동 실행 멈춤">
+                        </a>
+                    </div>
+                    <div class="section section01">
+                        <a class="mainImgBtn" href="#mainImg01">
+                            <img src="image/btn_01_off.png" alt="01">
+                        </a>
+                        <div id="mainImg01" class="mainImg" style="left: 0px; display: none;">
+                            <h2>
+                                <img src="image/tit_main01.png" alt="호암미술관 수려한 자연속에 자리하다">
+                            </h2>
+                            <p>
+                                <img src="image/txt_main01.png" alt="수려한 자연 경관 속에 자리하고 있는 호암미술관은 전통한옥 형태를 하고 있으며 전통정원 희원과 함께 조화를 이루고 있습니다. 법연지(法蓮池)를 앞에 두고 바라보는 호암미술관은 흡사 한 폭의 한국화를 보는 듯 합니다">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section section02">
+                        <a class="mainImgBtn" href="#mainImg02">
+                            <img src="image/btn_02_off.png" alt="02">
+                        </a>
+                        <div id="mainImg02" class="mainImg" style="left: 0px; display: none;">
+                            <h2>
+                                <img src="image/tit_main02.png" alt="호암미술관 작품 속으로 빠져들다">
+                            </h2>
+                            <p>
+                                <img src="image/txt_main02.png" alt="호암미술관은 고대부터 조선시대까지 미술문화의 역사를 살펴 보고 한국의 멋과 전통문화의 향기를 느끼는데 부족함이 없습니다.">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section section03">
+                        <a class="mainImgBtn" href="#mainImg03">
+                            <img src="image/btn_03_off.png" alt="03">
+                        </a>
+                        <div id="mainImg02" class="mainImg" style="left: 0px; display: none;">
+                            <h2>
+                                <img src="image/tit_main03.png" alt="호암미술관 자연ㆍ건축ㆍ정원의 관계 맺음">
+                            </h2>
+                            <p>
+                                <img src="image/txt_main03.png" alt="정원과 건축과 자연이 그 경계를 넘나드는 ‘희원’은 건축을 끌어안고 담 밖의 자연과 또 다시 한 몸을 이루는 한국 전통 정원이 지닌 가장 빼어난 미학을 선사합니다.">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                ::after
+            </div>
+        </div>
+    </div>
+</body>
+</html>

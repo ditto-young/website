@@ -1,0 +1,194 @@
+* {margin:0; padding:0;}
+html{overflow-y: scroll }
+title{display: none;}
+html, body { font-family:'돋움', Dotum, Tahoma; font-size:12px; color:#959595; line-height:1.6 }
+img, fieldset {border:none;}
+input, select{vertical-align:middle } 
+ul, ol {list-style-type:none;}
+dt, dd, h1 ,h2, h3, h4 {padding:0px; margin:0px;}
+hr {display: none;}
+a, a:link, a:visited, a:active {color:#959595; text-decoration:none; }
+a:hover {color:#959595; text-decoration:none }
+.clfix:after {content: "."; display: block; height: 0px; clear: both; visibility: hidden;}
+.clfix {display: inline-block;}
+.clfix {display: block;}
+.clfix.clear{clear:left;}
+* html .clfix {height: 1%;} /* Hides from IE-mac */
+.clfix {zoom:1;} /*for IE 5.5-7*/
+.pt0{ padding-top: 0px !important;}
+.widMar{ width: 974px !important; overflow: hidden; }
+
+#wrap{
+    width:100%;
+    height: 100%;
+    min-width: 974px;
+}
+
+#wrap #header{
+    width: 100%;
+    min-width: 974px;
+    height: 99ox;
+    border-bottom: 2px solid #a18e75;
+    background: #fff;
+    position: relative;
+    z-index:9999;
+}
+
+.mainHeader{
+    height: 101px !important;
+    border-bottom: none !important ;
+}
+#wrap #header_inner{
+    width:974px;
+    margin: 0 auto;
+}
+
+#wrap #header_inner h1{
+    margin-top:32px;
+    float: left;
+}
+
+#gnb{
+    float: left;
+    margin: 46px 0 0 44px;
+    width:422px;
+    display: inline;
+    line-height: 0;
+    font-size:0;
+    position: relative;
+}
+
+#gnb li{
+    float: left;
+    background: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+
+#gnb li a{
+    display: block;
+    overflow: hidden;
+    height: 14px;
+}
+
+#gnb li.topMenu01{
+    left: -18px;
+    top:-15px;
+    padding:15px 17px 16px 18px;
+}
+
+#gnb li.topMenu02{
+    left:62px;
+    top:-15px;
+    padding:15px 15px 16px 14px;
+}
+
+#gnb li.topMenu03{
+    left: 150px;
+    top: -15px;
+    padding: 15px 15px 16px 14px;
+}
+
+#header_bann{
+    float: right;
+    position: relative;
+    width: 200px;
+    height: 99px;
+    overflow:hidden;
+}
+
+#header_bann .bann.on{
+    z-index: 1;
+}
+
+#header_bann .bann{
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    background: #fff;
+    text-align: right;
+    height: 99px;
+}
+
+#header_bann .bann_btn{
+    position: absolute;
+    right: 0;
+    bottom: 11px;
+    z-index: 3;
+}
+
+#header_bann .bann_btn a{
+    float: left;
+}
+
+#mainContentWrap{
+    position: relative;
+    height: 636px;
+}
+
+#mainContent{
+    width: 1604px;
+    height: 636px;
+    margin-left: -820px;
+    position: absolute;
+    left: 50%;
+    top:0;
+}
+
+#mainImgWrap{
+    position: relative;
+    padding-top: 285px;
+    padding-left: 1039px;
+    width: 1604px;
+    height: 351px;
+    z-index: 1;
+}
+
+#mainImgWrap .play{
+    float: left;
+    padding-right: 5px;
+}
+
+#play .mainImgBtn{
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+#mainImgWrap .stop{
+    float: left;
+    padding-right:5px;
+}
+
+#mainImgWrap .section{
+    float: left;
+    width: 21px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+.section .mainImgBtn img{
+    vertical-align: top;
+}
+
+.section .mainImg{
+    position: absolute;
+    top:0;
+    width: 1604px;
+    height: 636px;
+}
+
+.section .mainImg p{
+    position: absolute;
+    right: 335px;
+    top: 233px;
+}
+
+.section .mainImg h2{
+    position: absolute;
+    right: 335px;
+    top:125px;
+}
